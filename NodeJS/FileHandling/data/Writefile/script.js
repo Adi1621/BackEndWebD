@@ -31,7 +31,6 @@ fs.rmdir(
     },
     (err) => {
         if (err) {
-            
             console.log(err.message);
         }
     }
