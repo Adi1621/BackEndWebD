@@ -8,3 +8,17 @@ With the help of NodeJS
 -You can create webservers in JS language
 -You can do file handling
 
+Node JS Architecture
+-Client makes a request to a server
+-All requests queue in Event Queue
+-All requests goes through Event Loop
+Event Loop-Watcher on queue and takes request on basis of FIFO one by one 
+-Request are of two types: Blocking(Sync task) and Non-Blocking(Async task)
+-If the request is Non-Blocking, eventloop will process the request and send response to the user
+-If the request in Blocking,request will go to thread pool and threadpool will assign a thread and make him work on request 
+Note:Threadpool has limited number of threads
+-When the thread will finish the request it will return the result and thread will return to Threadpool
+
+
+
+

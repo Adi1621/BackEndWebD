@@ -7,10 +7,10 @@ const filePath = path.join(__dirname, "test.txt");
 const filepath = path.join(__dirname, "test2.txt")
 
 // fs.writeFileSync("./test.txt","Hey there");
-//sync...
+//sync...blocking operation
 fs.writeFileSync(filePath, "Hey there");
 
-//async...
+//async...non-blocking operations
 fs.writeFile(filepath, "Hey there again", (err) => { });
 
 //read file sync
@@ -34,3 +34,5 @@ fs.unlinkSync("./test2.txt");
 
 //file stats
 console.log(fs.statSync("./contacts.txt"));
+
+
