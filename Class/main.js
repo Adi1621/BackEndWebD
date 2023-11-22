@@ -7,6 +7,7 @@ class Vehicle{
     }
     /*Set keyword*/ 
     set setPrice(price){
+        
         this.price=price;
     }
 }
