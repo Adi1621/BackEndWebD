@@ -10,4 +10,5 @@ let food = "Fish";
 module.exports={
      cat,
     food
+    
 }
