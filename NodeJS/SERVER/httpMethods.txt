@@ -1,0 +1,10 @@
+GET: When you want to get some data from the server by default the server use GET request. After getting GET request server goes to database and only reads the data and send it to the client.
+
+POST: When you to send and change or add some data in server.
+
+PUT: PUT request will update or replace existing data on the server.
+-Sending a PUT request will update or replace existing data on the server on the other hand sending a POST request will create new data on the server, but it will not modify any existing data. Thatswhy it is considered as safer method. 
+
+PATCH: PATCH is a technique for transforming the resources when the client transmits partial data that will be updated without changing the whole data.
+
+DELETE: The HTTP DELETE request method deletes the specified resource.

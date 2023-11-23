@@ -1,14 +1,16 @@
 const http = require("http");
-const fs = require("fs");
-const url = require("url");
+const express = require("express");
 
-const myServer = http.createServer((req, res) => {   //request handler
-    if(req.url === "/favicon.ico") return res.end(); 
-    const log = `${Date.now()}: ${req.url} New Req Recieved\n`
-    fs.appendFile('log.txt',log,(err,data)=>{
-        res.end("Hello from Server");
-    })
-    res.end("Hello From Server")
-}); 
+const app = express();
 
-myServer.listen(8001, () => console.log("Server Started"));
+app.get("/", (req,res) => {
+    return res.send("Hello from home page");
+});
+
+app.get("/about", (req,res) =>{
+    return res.send("Hello from about page");
+});
+
+const myServer = http.createServer(app);
+
+myServer.listen(8000, () => console.log("Server Started"));
