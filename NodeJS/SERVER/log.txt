@@ -11,3 +11,8 @@ Version : 4.18.3
 
 3rd Part - It represents updates of Minor Fixes (Optional)
 
+************************************************** REST API ******************************************************
+
+- REST API is based on Server Client architecture where Server and Client are different entities and both should not depend on each other
+
+- Respect HTTP methods
