@@ -1,8 +1,6 @@
 let express = require("express");
 let app = express();
-let path = require("path");
-
-// app.use(express.urlencoded({extended:true})); 
+let path = require("path"); 
 
 app.set('view engine', 'hbs');
 
