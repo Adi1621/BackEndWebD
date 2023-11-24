@@ -3,7 +3,7 @@ let app = express();
 let path = require("path");
 
 // app.use(express.urlencoded({extended:true})); 
-// app.use(express.json());
+
 app.set('view engine', 'hbs');
 
 app.get("/home", (req, res) => {
