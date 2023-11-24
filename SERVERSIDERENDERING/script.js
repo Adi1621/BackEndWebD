@@ -1,7 +1,7 @@
 let express = require("express");
 let app = express();
 let path = require("path");
-// app.use(express.static(path.join(__dirname,"static")))
+
 // app.use(express.urlencoded({extended:true})); 
 // app.use(express.json());
 app.set('view engine', 'hbs');
