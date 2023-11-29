@@ -9,7 +9,6 @@ With the help of NodeJS
 -You can do file handling
 
 Node JS Architecture
-
 -Client makes a request to a server
 -All requests queue in Event Queue
 -All requests goes through Event Loop
