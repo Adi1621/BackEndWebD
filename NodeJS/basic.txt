@@ -10,6 +10,7 @@ With the help of NodeJS
 
 Node JS Architecture
 
+
 -Client makes a request to a server
 -All requests queue in Event Queue
 -All requests goes through Event Loop
