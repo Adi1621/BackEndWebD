@@ -41,17 +41,17 @@ app.post("/tasks", (req, res) => {
     });
 });
 
-// GET Request - EDIT
+// POST Request - EDIT
 app.post("/tasks/edit/:id", (req, res) => {
-    const taskId = req.params.id-1;
-    const newTask=req.body.task;
+    const taskId = req.params.id - 1;
+    const newTask = req.body.task;
 
-    tasks[taskId].task=newTask;
+    tasks[taskId].task = newTask;
 
     if (!taskId) {
         return res.send("Task not found");
     }
-    else{
+    else {
         fs.writeFile(filePath, JSON.stringify(tasks), (err, data) => {
             if (err) {
                 return res.send("An Error Occured: ", err);
@@ -65,11 +65,6 @@ app.post("/tasks/edit/:id", (req, res) => {
 // GET Request - DELETE
 app.get("/tasks/delete/:id", (req, res) => {
     const taskId = req.params.id;
-    const taskToDelete = tasks.find((task) => task.id === parseInt(taskId));
-
-    if (!taskToDelete) {
-        return res.send("Task not found");
-    }
 
     const newTasks = tasks.filter((task) => task.id !== parseInt(taskId));
 
@@ -82,6 +77,6 @@ app.get("/tasks/delete/:id", (req, res) => {
     });
 });
 
-app.listen(7000, () => {
+app.listen(3000, () => {
     console.log("Server Started");
 });
