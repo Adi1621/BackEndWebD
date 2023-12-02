@@ -8,8 +8,8 @@ const app = express();
 const filePath = path.join(__dirname, "MOCK_DATA.json");
 
 // Middlewares
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
 
 // GET Request - Home Page
 app.get("/", (req, res) => {
