@@ -9,11 +9,11 @@ function middleware1(req, res, next) {
     next();
 }
 function middleware2(req, res, next) {
-    console.log("running middleware1 ")
+    console.log("running middleware2 ")
     next();
 }
 function middleware3(req, res, next) {
-    console.log("running middleware1 ")
+    console.log("running middleware3 ")
     next();
 }
 
