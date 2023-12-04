@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/",(req,res)=>{
     console.log("running /");
-    res.render("home");
+    res.send("home");
 })
 
 
