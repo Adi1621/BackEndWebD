@@ -5,15 +5,15 @@ app.use(middleware2);
 app.use(middleware3);
 
 function middleware1(req, res, next) {
-    console.log("running middleware1 ")
+    console.log("running middleware1 ");
     next();
 }
 function middleware2(req, res, next) {
-    console.log("running middleware2 ")
+    console.log("running middleware2 ");
     next();
 }
 function middleware3(req, res, next) {
-    console.log("running middleware3 ")
+    console.log("running middleware3 ");
     next();
 }
 
