@@ -25,5 +25,4 @@ app.get("/", (req, res) => {
 
 app.listen(4444, () => {
     console.log("Server Started");
-    
 })
