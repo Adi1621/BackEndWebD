@@ -20,6 +20,7 @@ function middleware3(req, res, next) {
 app.get("/", (req, res) => {
     console.log("running /");
     res.send("home");
+    
 })
 
 
