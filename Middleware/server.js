@@ -14,6 +14,7 @@ function middleware2(req, res, next) {
 }
 function middleware3(req, res, next) {
     console.log("running middleware3 ");
+    
     next();
 }
 
